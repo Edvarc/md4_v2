@@ -67,7 +67,7 @@ namespace Exercises.Level1
         /// </summary>
         public int CaughtSpeeding(int speed, bool isBirthday)
         {
-          //tests
+            throw new NotImplementedException();
         }
 
         /// <summary>
