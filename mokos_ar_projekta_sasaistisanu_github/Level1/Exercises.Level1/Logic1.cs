@@ -67,7 +67,15 @@ namespace Exercises.Level1
         /// </summary>
         public int CaughtSpeeding(int speed, bool isBirthday)
         {
-            throw new NotImplementedException();
+            if (speed <= 60 || speed <= 65 && isBirthday)
+                return 0;
+            if (speed >= 60 && speed <= 80 || speed >= 60 && speed <= 85 && isBirthday)
+                return 1;
+            if (speed >=81 ||speed >= 86 && isBirthday  )
+                return 0
+
+
+
         }
 
         /// <summary>
