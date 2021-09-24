@@ -67,22 +67,21 @@ namespace Exercises.Level1
         /// </summary>
         public int CaughtSpeeding(int speed, bool isBirthday)
         {
-            if (speed <= 60 || speed <= 65 && isBirthday)
+            if (speed <= 60 || (speed <= 65 && isBirthday))
             {
                 return 0;
             }
-            if (speed >= 60 && speed <= 80 || speed >= 60 && speed <= 85 && isBirthday)
-            { 
+            if (speed >= 60 && speed <= 80 || (speed >= 60 && speed <= 85 && isBirthday))
+            {
                 return 1;
             }
-            if (speed >= 81 || speed >= 86 && isBirthday)
-            {
-                return 0;
-            }
+
+            return 0;
+
 
 
         }
-
+        
         /// <summary>
         /// Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, are
         /// forbidden, so in that case just return 20.
@@ -446,6 +445,6 @@ namespace Exercises.Level1
         public int SumLimit(int a, int b)
         {
             throw new NotImplementedException();
-        }
+        } 
     }
 }
